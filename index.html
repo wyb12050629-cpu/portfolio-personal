@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>왕유빈 | AI Native 인바운드 사업 개발자</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@700;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="sparkleCanvas"></canvas>
+
+<nav>
+  <div class="nav-logo">왕<span>유빈</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">홈</a></li>
+    <li><a href="#dashboard">AI 프로젝트</a></li>
+    <li><a href="#expertise">경력</a></li>
+    <li><a href="#strategy">경험</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">유빈 bot에게 질문 →</a>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">✦ 마이리얼트립 인바운드 사업 개발 매니저 지원 포트폴리오</div>
+        <h1 class="hero-title"><span id="typing-text"></span><span class="cursor">|</span></h1>
+        <p class="hero-sub">실적 282% 폭발적인 성장 × AI 기반 업무 효율 × 인바운드 전문성</p>
+        <div class="hero-tags">
+          <span>#AI_Native</span><span>#데이터기반</span>
+          <span>#B2B세일즈</span><span>#파트너십운영</span><span>#실행력</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#dashboard" class="btn-primary">✦ AI 프로젝트 보기</a>
+          <a href="#expertise" class="btn-ghost">경력 보기</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orb">
+          <span class="orb-num">103%</span>
+          <span class="orb-lbl">Q1 매출 달성률</span>
+        </div>
+        <div class="hero-orb">
+          <span class="orb-num">+282%</span>
+          <span class="orb-lbl">Q2 실적 성장률</span>
+        </div>
+        <div class="hero-orb">
+          <span class="orb-num">73%</span>
+          <span class="orb-lbl">평균 일 매출 ↑</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard -->
+<section id="dashboard">
+  <div class="container">
+    <div class="section-label">CORE PROJECT</div>
+    <h2 class="section-title fade-up">AI 기반 업무 프로세스 개선 프로젝트</h2>
+    <p class="section-desc">
+      하나투어 영업 현장의 비효율적인 프로세스를 직접 발견하고,<br>
+      Claude Code로 처음부터 설계·구축한 내부 운영 툴입니다.<br>
+      아래 탭에서 기획 전 과정을 확인하세요.
+    </p>
+
+    <!-- 4탭 제안서 컴포넌트 -->
+    <div class="proposal-shell fade-up">
+
+      <!-- 헤더 -->
+      <div class="prop-header">
+        <div class="prop-top">
+          <span class="prop-logo">HANA</span>
+          <div class="prop-title">
+            영업본부 인센티브 통합 관리 시스템 구축 제안서
+            <span class="prop-subtitle">AI (Claude Code) 기반의 시스템 구축을 통한 프로세스 개선</span>
+          </div>
+          <span class="prop-date">영업2팀 왕유빈<br>2026.04.07</span>
+        </div>
+        <div class="prop-tabs">
+          <div class="ptab on" onclick="switchTab(0, this)">01 도입 배경</div>
+          <div class="ptab" onclick="switchTab(1, this)">02 프로젝트 개요</div>
+          <div class="ptab" onclick="switchTab(2, this)">03 핵심 기능</div>
+          <div class="ptab" onclick="switchTab(3, this)">04 기대 효과</div>
+        </div>
+      </div>
+
+      <!-- 탭 바디 -->
+      <div class="prop-body">
+
+        <!-- 탭0: 도입 배경 -->
+        <div class="ptab-content active" id="ptab-0">
+          <div class="goal-banner">
+            <div class="gb-kw">궁극적인 목적</div>
+            <div class="gb-main">영업 생산성 향상</div>
+            <div class="gb-badges">
+              <span>데이터 정합성 100%</span>
+              <span>업무 시간 95% 단축</span>
+              <span class="green">정산 오류 0%</span>
+            </div>
+          </div>
+          <div class="prob-grid">
+            <div class="prob-card">
+              <div class="prob-icon blue-icon">📅</div>
+              <div class="prob-title">주간 보고 리소스</div>
+              <div class="prob-desc">매주 수기 집계·정리 반복 작업으로 전략 수립 시간 부족</div>
+            </div>
+            <div class="prob-card">
+              <div class="prob-icon orange-icon">⚠</div>
+              <div class="prob-title">휴먼 에러</div>
+              <div class="prob-desc">수기 계산 과정에서 발생하는 입력 실수 및 수식 오류</div>
+            </div>
+            <div class="prob-card">
+              <div class="prob-icon red-icon">⛔</div>
+              <div class="prob-title">미/과수 정산 리스크</div>
+              <div class="prob-desc">인센티브 미수·과수 발생 시 추적 어렵고 수정 비용 발생</div>
+            </div>
+            <div class="prob-card">
+              <div class="prob-icon gold-icon">💰</div>
+              <div class="prob-title">금액 변동성</div>
+              <div class="prob-desc">입금가 수시 변동 시 각 시트 개별 반영 필요 → 데이터 불일치</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 탭1: 프로젝트 개요 -->
+        <div class="ptab-content" id="ptab-1">
+          <div class="flow-diagram">
+            <div class="flow-node">
+              <div class="flow-circle blue-circle">📊</div>
+              <div class="flow-label">견적 데이터<br>업로드</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">
+              <div class="flow-circle blue-circle">⚡</div>
+              <div class="flow-label">시스템 내<br>자동 연동</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">
+              <div class="flow-circle blue-circle">🔄</div>
+              <div class="flow-label">변동사항<br>즉시 반영</div>
+            </div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">
+              <div class="flow-circle blue-circle">✓</div>
+              <div class="flow-label">단일 DB<br>자동 엔진</div>
+            </div>
+          </div>
+          <div class="stack-grid">
+            <div class="stack-col">
+              <div class="stack-col-title">AI 기반 고속 개발</div>
+              <div class="stack-items">
+                <div class="stack-pill active">Claude Code</div>
+                <div class="stack-pill active">Next.js 14</div>
+                <div class="stack-pill">Github / Vercel</div>
+                <div class="stack-pill">Supabase Cloud DB</div>
+              </div>
+            </div>
+            <div class="stack-col">
+              <div class="stack-col-title">데이터 파이프라인</div>
+              <div class="stack-items">
+                <div class="stack-pill">엑셀 업로드 → 자동 import</div>
+                <div class="stack-pill">'견적번호' KEY로 전 탭 연결</div>
+                <div class="stack-pill">날짜 시리얼 자동 변환</div>
+                <div class="stack-pill">동일 키 병합(upsert) 처리</div>
+              </div>
+            </div>
+            <div class="stack-col">
+              <div class="stack-col-title">통합 모듈 (6탭)</div>
+              <div class="module-grid">
+                <div class="mod-item">주간보고</div>
+                <div class="mod-item">대리점 관리</div>
+                <div class="mod-item">견적 파이프라인</div>
+                <div class="mod-item">인센티브 정산</div>
+                <div class="mod-item">출발 달력</div>
+                <div class="mod-item highlight-mod">+ 확장 중</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 탭2: 핵심 기능 -->
+        <div class="ptab-content" id="ptab-2">
+          <div class="feat-btns">
+            <div class="feat-btn on" onclick="switchFeat(0, this)"><span class="feat-num">01</span>주간 보고 자동 집계</div>
+            <div class="feat-btn" onclick="switchFeat(1, this)"><span class="feat-num">02</span>이중 단가 관리</div>
+            <div class="feat-btn" onclick="switchFeat(2, this)"><span class="feat-num">03</span>진행 상태 트래킹</div>
+            <div class="feat-btn" onclick="switchFeat(3, this)"><span class="feat-num">04</span>출발 달력 연동</div>
+            <div class="feat-btn" onclick="switchFeat(4, this)"><span class="feat-num">05</span>대리점별 견적 조회</div>
+            <div class="feat-btn" onclick="switchFeat(5, this)"><span class="feat-num">06</span>분기별 실적 조회</div>
+          </div>
+          <div class="feat-detail" id="featDetail">
+            <div class="fd-title" id="fdTitle">01 · 주간 보고 자동 집계</div>
+            <div class="fd-desc" id="fdDesc">매주 수기로 작성하던 영업 주간 보고서를 자동으로 생성합니다. 수요일 기준으로 해당 주차 데이터가 자동 집계되어 클립보드 복사 한 번으로 보고 완료.</div>
+            <div class="fd-points" id="fdPoints">
+              <div class="fd-point">일일 활동 로그 입력 → 주간 보고 통계 즉시 재계산</div>
+              <div class="fd-point">week_wednesday 컬럼 기준 자동 주차 분류</div>
+              <div class="fd-point">공식인증 / 일반대리점 리그별 체결률 분리 집계</div>
+              <div class="fd-point">클립보드 복사로 보고 리소스 97% 절감</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 탭3: 기대 효과 -->
+        <div class="ptab-content" id="ptab-3">
+          <div class="expect-statement">
+            영업 담당자가 데이터 관리에 쏟는 시간을 줄이고,<br>
+            대리점과의 소통 및 영업 전략 수립에 더 집중할 수 있는 환경을 만듭니다.
+          </div>
+          <div class="effect-grid">
+            <div class="effect-card blue-effect">
+              <div class="ec-title">⚡ 업무 생산성 극대화</div>
+              <div class="ec-desc">반복 집계 작업 자동화로 확보된 시간을 대리점 맞춤 전략에 집중. 업무 시간 95% 단축, 보고 공수 97% 절감.</div>
+              <div class="ec-badge">업무시간 95% 단축</div>
+            </div>
+            <div class="effect-card green-effect">
+              <div class="ec-title">✓ 재무 리스크 제로화</div>
+              <div class="ec-desc">인센티브 입금가 변동에 따른 복잡한 수기 계산을 자동화. 데이터 정합성 100% 확보, 미수·과수 원천 차단.</div>
+              <div class="ec-badge green-badge">정산 오류 0건</div>
+            </div>
+          </div>
+          <div class="roadmap-row">
+            <div class="rm-card"><div class="rm-title">TL 관리 고도화</div><div class="rm-desc">잔금 기한 임박건 자동 알림 · 네임/발권 TL 팝업</div></div>
+            <div class="rm-card"><div class="rm-title">지속적인 업데이트</div><div class="rm-desc">AI 고속 코딩으로 현장 피드백 즉시 반영</div></div>
+            <div class="rm-card"><div class="rm-title">모바일 확장</div><div class="rm-desc">API 연동으로 외부 활동 중 원활한 업무 수행</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Expertise -->
+<section id="expertise">
+    <div class="container">
+        <div class="section-label">TRACK RECORD</div>
+        <h2 class="section-title fade-up">경력 & 핵심 역량</h2>
+
+        <div class="exp-grid">
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-year">2023.01</div>
+                    <div class="tl-content">
+                        <h4>소르본 대학교 어학연수</h4>
+                        <p>파리 현지 네트워크 구축, 프랑스 문화·여행시장 이해</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot highlight"></div>
+                    <div class="tl-year">2024.09</div>
+                    <div class="tl-content">
+                        <h4>(주)게릴라즈 CX팀 인턴</h4>
+                        <p>외국인 유학생 숙소 매칭 서비스 UI 개편 → 고객 문의 25%↑</p>
+                        <span class="tl-badge">📊 데이터 기반 UX 개선</span>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot highlight"></div>
+                    <div class="tl-year">2025.03</div>
+                    <div class="tl-content">
+                        <h4>인사동 아트샵 '색상' 매니저</h4>
+                        <p>고객 페르소나별 세일즈 스크립트 → 일 매출 73%↑ (150만→260만)</p>
+                        <span class="tl-badge gold">💰 일매출 최고 260만원</span>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot highlight blue"></div>
+                    <div class="tl-year">2025.08~현재</div>
+                    <div class="tl-content">
+                        <h4>하나투어 영업2팀 (현직)</h4>
+                        <p>대리점 83곳 B2B 영업관리<br>26Q1 목표 대비 103% 달성<br>26Q2 성장률 282% 달성</p>
+                        <span class="tl-badge blue">🚀 103% 달성 · AI 자동화</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="skills-panel fade-up">
+                <div class="skill-group">
+                    <h4 class="skill-group-title">기술 스택</h4>
+                    <div class="skill-bar"><span class="skill-name">Claude / AI 프롬프트 엔지니어링</span><div class="bar"><div class="bar-fill" style="width:92%"></div></div></div>
+                    <div class="skill-bar"><span class="skill-name">데이터 분석 (BI / Excel)</span><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
+                    <div class="skill-bar"><span class="skill-name">Google Workspace</span><div class="bar"><div class="bar-fill" style="width:78%"></div></div></div>
+                    <div class="skill-bar"><span class="skill-name">MS Office</span><div class="bar"><div class="bar-fill" style="width:80%"></div></div></div>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-group-title">직무 역량</h4>
+                    <div class="skill-bar"><span class="skill-name">인바운드 영업 / 파트너십</span><div class="bar"><div class="bar-fill cyan" style="width:90%"></div></div></div>
+                    <div class="skill-bar"><span class="skill-name">프랑스어 커뮤니케이션 (DELF B2)</span><div class="bar"><div class="bar-fill cyan" style="width:82%"></div></div></div>
+                    <div class="skill-bar"><span class="skill-name">사업 개발 / GTM 기획</span><div class="bar"><div class="bar-fill cyan" style="width:75%"></div></div></div>
+                    <div class="skill-bar"><span class="skill-name">크로스셀링 / 채널 전략</span><div class="bar"><div class="bar-fill cyan" style="width:88%"></div></div></div>
+                </div>
+                <div class="skill-group">
+                    <h4 class="skill-group-title">단체 활동</h4>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-title">2024 파리올림픽 사전훈련캠프 운영요원</div>
+                            <div class="activity-desc">퐁텐블로 현지 운영, 프랑스 유관기관 통번역</div>
+                            <span class="cert-badge">🏅 대한체육회</span>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-title">서울연합 외국인투어봉사단 '미티어' 회장</div>
+                            <div class="activity-desc">투어 신청률 100% 성장, 파트너십 회비 40% 절감</div>
+                            <span class="cert-badge">🌏 봉사단 회장</span>
+                        </div>
+                        <div class="activity-item last">
+                            <div class="activity-title">한국외대 원어연극학회 '레빠시오네' 배우팀장</div>
+                            <div class="activity-desc">프랑스어 원어 연극 기획·연출·연기</div>
+                            <span class="cert-badge">🎭 배우팀장</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-section-label">자격사항</div>
+                <div class="cert-row">
+                    <div class="cert-badge">🗺️ 국외여행자인솔자(TC)</div>
+                    <div class="cert-badge">🚗 운전면허 2종보통</div>
+                    <div class="cert-badge">🇫🇷 DELF B2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-section">
+            <h3 class="edu-title">🎓 Education</h3>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-year">2020 — 2025</div>
+                    <h4>한국외국어대학교</h4>
+                    <p>프랑스어교육학 (주전공) · 광고PR브랜딩 (부전공)</p>
+                    <span class="edu-badge">GPA 3.55 / 4.5</span>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2023.01 — 06</div>
+                    <h4>Sorbonne University</h4>
+                    <p>부설 어학원 어학연수 · 파리 현지 문화 탐방</p>
+                    <span class="edu-badge">🇫🇷 현지 네트워크</span>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">재학중</div>
+                    <h4>세종사이버대학교</h4>
+                    <p>한국어학과 학사 과정 (외국인 고객 서비스 전문성 강화)</p>
+                    <span class="edu-badge">외국인 타겟팅 전문성</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Strategy (경험) -->
+<section id="strategy">
+    <div class="container">
+        <div class="section-label">EXPERIENCE</div>
+        <h2 class="section-title fade-up">기술로 시간을 벌고, 그 시간으로 성과를 사는 매니저</h2>
+
+        <div class="exp-card has-img fade-up" data-delay="0">
+            <div class="exp-card-img pos-top">
+                <img src="images/exp-hanatour.jpg" alt="하나투어 영업 현장">
+            </div>
+            <div class="exp-card-text">
+                <span class="exp-tag">하나투어 영업본부 (영업 2팀)</span>
+                <h3 class="exp-card-title">전략적 프로모션 설계와 현장 밀착형 영업으로 1Q 목표 103% 달성</h3>
+                <div class="exp-card-body">
+                    <p><span class="exp-label">핵심 성과:</span> 전국 83개 대리점 영업 관리 및 1월 매출 목표 대비 103% 초과 달성.</p>
+                    <p><span class="exp-label">업무 효율화:</span> 반복적인 수기 정산 업무를 AI로 자동화하여 확보한 시간을 현장 대리점 영업 및 맞춤형 컨설팅에 재투자.</p>
+                    <p><span class="exp-label">세일즈 전략:</span> 대리점별 매출 규모와 특성을 분석하여 '리그제 랭킹 프로모션'을 직접 기획. 모든 대리점이 순위권 진입을 목표로 경쟁할 수 있는 동기를 부여하여 한정된 예산 내에서 폭발적인 매출 성장을 견인.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-card has-img fade-up" data-delay="200">
+            <div class="exp-card-img">
+                <img src="images/exp-guerillas.jpg" alt="게릴라즈 CX팀">
+            </div>
+            <div class="exp-card-text">
+                <span class="exp-tag">(주)게릴라즈 CX팀 인턴</span>
+                <h3 class="exp-card-title">고객 데이터 분석 기반의 솔루션 제안으로 인바운드 문의 25% 증대</h3>
+                <div class="exp-card-body">
+                    <p><span class="exp-label">핵심 활동:</span> 외국인 유학생 주거 서비스의 CS 데이터를 분석하여 고객 페인 포인트(Pain Point) 추출.</p>
+                    <p><span class="exp-label">문제 해결:</span> 한국 지리에 익숙하지 않은 외국인 고객을 위해 대학별 랜드마크 기반 필터링 시스템을 제안하여 정보 탐색 효율성 제고.</p>
+                    <p><span class="exp-label">성과:</span> 고객의 탐색 단계에서 이탈률을 낮추어 최종 예약 상담 전환율을 25% 이상 개선.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-card has-img fade-up" data-delay="400">
+            <div class="exp-card-img">
+                <img src="images/exp-meteor.jpg" alt="미티어 투어">
+            </div>
+            <div class="exp-card-text">
+                <span class="exp-tag">외국인 투어 연합 동아리 '미티어(METEOR)' 회장</span>
+                <h3 class="exp-card-title">인바운드 공급망 재설계 및 공격적 소싱으로 투어 신청 100% 성장</h3>
+                <div class="exp-card-body">
+                    <p><span class="exp-label">핵심 성과:</span> 방한 외국인 대상 로컬 투어 운영 구조 효율화 및 투어 신청 건수 2배 성장.</p>
+                    <p><span class="exp-label">직무 강점:</span> 현지인 관점의 웰니스·문화 체험 상품을 기획하고, SNS 기반의 다이렉트 소싱 채널을 구축하여 마케팅 비용 없이 고객 접점 확보.</p>
+                    <p><span class="exp-label">글로벌 역량:</span> 직접 발로 뛰며 외국인 커뮤니티 파트너십을 체결하는 등 '팔리는 인바운드 상품'의 전체 생애주기를 직접 관리.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 수치로 증명한 성과 -->
+<section id="performance">
+    <div class="container">
+        <div class="perf-section">
+            <h3 class="perf-title">수치로 증명한 성과</h3>
+            <div class="perf-charts">
+                <div class="perf-card fade-up" data-delay="0">
+                    <span class="perf-tag">하나투어 영업본부</span>
+                    <div class="perf-label">하나투어 26Q1 매출 달성률</div>
+                    <div class="chart-wrap-donut"><canvas id="chart1"></canvas></div>
+                    <div class="perf-sub">목표 284,167,272원 → 실적 292,692,291원</div>
+                </div>
+                <div class="perf-card fade-up" data-delay="150">
+                    <span class="perf-tag">인사동 아트샵 색상</span>
+                    <div class="perf-label">인사동 '색상' 일매출 변화</div>
+                    <div class="perf-growth">+73%</div>
+                    <canvas id="chart2"></canvas>
+                </div>
+                <div class="perf-card fade-up" data-delay="300">
+                    <span class="perf-tag">하나투어 영업본부</span>
+                    <div class="perf-label">하나투어 26Q2 실적 성장률</div>
+                    <div class="perf-growth">+282%</div>
+                    <canvas id="chart3"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">CONTACT WITH AI</div>
+    <h2 class="section-title">왕유빈 매니저에게 물어보세요</h2>
+    <p class="section-desc">"진짜 AI Native 인재다"  — 채용 담당자님, 궁금한 점을 AI에게 바로 물어보세요.</p>
+
+    <div class="contact-layout fade-up">
+      <div class="chatbot-panel">
+        <div class="chat-header">
+          <div class="chat-avatar">YB</div>
+          <div>
+            <div class="chat-name">왕유빈 AI 어시스턴트</div>
+            <div class="chat-status">● 온라인 · 마이리얼트립 지원 중</div>
+          </div>
+          <div class="chat-badge">Powered by Claude</div>
+        </div>
+        <div id="chatMessages" class="chat-messages">
+          <div class="msg assistant">
+            안녕하세요! 저는 왕유빈의 AI 어시스턴트입니다. 😊<br>
+            경력, 프로젝트, 마이리얼트립 지원 동기 등 무엇이든 물어보세요!
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" id="chatInput" placeholder="예: AI 대시보드를 왜 만들었나요?" onkeydown="if(event.key==='Enter')sendChat()">
+          <button onclick="sendChat()" class="chat-send">전송</button>
+        </div>
+        <div class="chat-suggestions"></div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-info">
+          <h3>Direct Contact</h3>
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <a href="mailto:yubinlili125@gmail.com">yubinlili125@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📱</span>
+            <span>010-5782-5584</span>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <span>서울특별시 동대문구</span>
+          </div>
+        </div>
+        <div class="contact-divider"></div>
+        <div class="contact-summary">
+          <h4>한눈에 보는 왕유빈</h4>
+          <ul>
+            <li>✅ 하나투어 영업2팀 실적 282% 성장 사원</li>
+            <li>✅ 함께 일하면 에너지가 전염되는 사람</li>
+            <li>✅ 인바운드 투어 100% 성장 견인</li>
+            <li>✅ AI 자동화 툴 직접 설계·구현</li>
+          </ul>
+        </div>
+        <a href="mailto:yubinlili125@gmail.com" class="contact-cta">면접 제안하기 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <span class="footer-name">왕유빈 WANG YUBIN</span>
+    <span class="footer-sub">AI Native 인바운드 사업 개발자 · 마이리얼트립 지원 · Built with Claude Code 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
