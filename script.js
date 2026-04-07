@@ -112,6 +112,11 @@
             }
             i++;
             setTimeout(type, 55);
+        } else {
+            setTimeout(function () {
+                var photo = document.querySelector('.profile-photo-wrap');
+                if (photo) photo.classList.add('visible');
+            }, 300);
         }
     }
 
