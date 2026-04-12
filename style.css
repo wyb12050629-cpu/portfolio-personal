@@ -1304,6 +1304,112 @@ section#contact   { background: var(--bg); }
     margin-top: 14px;
 }
 
+/* === Side Projects 3열 그리드 === */
+.sp-section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--cyan);
+    margin: 2.5rem 0 1rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.side-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.sp-card {
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--cyan);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    box-shadow: 0 4px 20px rgba(33, 114, 200, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(14, 165, 200, 0.15);
+}
+
+.sp-card-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.sp-card-tag {
+    display: inline-flex;
+    font-size: 0.68rem;
+    background: #e0f7fc;
+    color: var(--cyan);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.sp-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text1);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.sp-card-desc {
+    font-size: 0.83rem;
+    color: var(--text2);
+    line-height: 1.65;
+    flex: 1;
+}
+
+.sp-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.sp-features span {
+    font-size: 0.7rem;
+    background: var(--bg2);
+    color: var(--text2);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.sp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.55rem 1rem;
+    background: var(--blue);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-top: 0.25rem;
+}
+
+.sp-link:hover {
+    background: #1558A8;
+}
+
+.sp-link-soon {
+    background: var(--text3);
+    cursor: default;
+    pointer-events: none;
+}
+
 /* --- Education --- */
 .edu-section {
     border-top: 1px solid var(--border);
@@ -1751,6 +1857,9 @@ footer {
     }
     .exp-card.has-img .exp-card-text {
         padding: 20px 18px;
+    }
+    .side-projects-grid {
+        grid-template-columns: 1fr;
     }
     .stack-grid {
         grid-template-columns: 1fr;
