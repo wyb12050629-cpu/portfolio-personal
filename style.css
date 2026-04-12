@@ -351,6 +351,7 @@ section#contact   { background: var(--bg); }
     height: 100%;
     object-fit: contain;
     object-position: bottom center;
+    mix-blend-mode: multiply;
 }
 
 .profile-photo-wrap::after {
