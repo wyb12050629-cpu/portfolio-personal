@@ -100,7 +100,7 @@
     var typingEl = document.getElementById('typing-text');
     if (!typingEl) return;
 
-    var text = "AI를 기반한 실행력으로\n데이터가 증명하는\n성과를 만드는 왕유빈입니다.";
+    var text = "AI를 기반한 실행력으로\n성과를 만드는\n왕유빈입니다.";
     var i = 0;
 
     function type() {

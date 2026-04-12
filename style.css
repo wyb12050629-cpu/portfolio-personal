@@ -329,17 +329,19 @@ section#contact   { background: var(--bg); }
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
 .profile-photo-wrap {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 260px;
-    height: 320px;
-    z-index: 2;
+    width: 312px;
+    height: 384px;
+    z-index: 1;
     opacity: 0;
     transition: opacity 1.2s ease;
+    pointer-events: none;
 }
 
 .profile-photo-wrap.visible {
@@ -351,7 +353,6 @@ section#contact   { background: var(--bg); }
     height: 100%;
     object-fit: contain;
     object-position: bottom center;
-    mix-blend-mode: multiply;
 }
 
 .profile-photo-wrap::after {
@@ -360,8 +361,8 @@ section#contact   { background: var(--bg); }
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
-    background: linear-gradient(transparent, #EEF5FF);
+    height: 60px;
+    background: linear-gradient(transparent, var(--bg));
     pointer-events: none;
 }
 
