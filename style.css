@@ -209,6 +209,10 @@ section#contact   { background: var(--bg); }
     align-items: center;
 }
 
+#hero > .container {
+    position: relative;
+}
+
 .hero-inner {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -329,14 +333,13 @@ section#contact   { background: var(--bg); }
 
 .profile-photo-wrap {
     position: absolute;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    height: 380px;
+    bottom: 0;
+    right: 0;
+    width: 260px;
+    height: 320px;
+    z-index: 2;
     opacity: 0;
-    transition: opacity 0.9s ease;
+    transition: opacity 1.2s ease;
 }
 
 .profile-photo-wrap.visible {
@@ -346,11 +349,8 @@ section#contact   { background: var(--bg); }
 .profile-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 160px;
-    opacity: 0.6;
-    mix-blend-mode: multiply;
+    object-fit: contain;
+    object-position: bottom center;
 }
 
 .profile-photo-wrap::after {
@@ -359,10 +359,9 @@ section#contact   { background: var(--bg); }
     bottom: 0;
     left: 0;
     right: 0;
-    height: 140px;
+    height: 100px;
     background: linear-gradient(transparent, #EEF5FF);
     pointer-events: none;
-    z-index: 2;
 }
 
 .hero-orbs-stack {
@@ -1273,6 +1272,44 @@ section#contact   { background: var(--bg); }
     color: #2172C8;
 }
 
+.exp-card.side-project {
+    border-left-color: #0EA5C8;
+    background: linear-gradient(135deg, #ffffff 0%, #f0faff 100%);
+}
+
+.exp-tag.cyan {
+    background: #e0f7fc;
+    color: #0EA5C8;
+}
+
+.exp-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 14px;
+    padding: 0.5rem 1.2rem;
+    background: var(--blue);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.exp-card-link:hover {
+    background: #1558A8;
+    transform: translateX(2px);
+}
+
+.exp-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
 /* --- Education --- */
 .edu-section {
     border-top: 1px solid var(--border);
@@ -1757,8 +1794,7 @@ footer {
         min-height: 280px;
     }
     .profile-photo-wrap {
-        width: 240px;
-        height: 280px;
+        display: none;
     }
     .hero-title {
         font-size: 2rem;
