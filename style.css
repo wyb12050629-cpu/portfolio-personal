@@ -1355,6 +1355,18 @@ section#contact   { background: var(--bg); }
     width: fit-content;
 }
 
+.sp-card-tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.sp-card-tag-toss {
+    background: #e8f0fe;
+    color: #1a4fd6;
+    font-weight: 700;
+}
+
 .sp-card-name {
     font-size: 1rem;
     font-weight: 700;
